@@ -56,8 +56,7 @@ CLASSES = \
 
 # Remove all bytecode and the jar file.
 clean:
-	$(RM) -r build/classes/algorithms/
-	$(RM) -r build/classes/tests/
+	$(RM) -r build/
 	$(RM) SAT.jar
 
 # Run the JUnit test suite.
@@ -66,9 +65,11 @@ test:
 
 # Compile all of the source code.
 compile:
+	mkdir build
+	mkdir build/classes
 	mkdir build/classes/algorithms/
 	mkdir build/classes/tests/
-	@javac -classpath ./lib/junit-4.9.jar:./lib/hamcrest-all-1.3.0RC2.jar:./src/:./build/:. -d ./build/classes ./src/algorithms/*.java ./src/tests/*.java
+	@javac -classpath "./lib/junit-4.9.jar:./lib/hamcrest-all-1.3.0RC2.jar:./src/:./build/:." -d ./build/classes ./src/algorithms/*.java ./src/tests/*.java
 
 # Create a jar file containing all of the bytecode.
 jar:

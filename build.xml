@@ -56,7 +56,7 @@
     <delete dir="build"/>
   </target>
 
-  <!-- COMPILING TASK - "ant compile" -->  
+  <!-- COMPILING TASK - "ant c ompile" -->  
   <target name="compile">
     <mkdir dir="build/classes/algorithms"/>
     <mkdir dir="build/classes/tests"/>

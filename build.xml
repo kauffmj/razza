@@ -1,11 +1,6 @@
-<!-- CS 29 0Lab Six                                                              -->
-<!-- Pledge:                                                                  -->
-<!--                                                                          -->
-<!--                                                                          -->
-<!--                                                                          -->
-<!-- available targets: "clean", "compile", "jar", "run", "cloc", "cobertura",-->
-<!--                    "cobertura-clean", "cobertura-instrument",            --> 
-<!--                    "cobertura-run", "cobertura-report"                   -->
+<!-- razza ant build system
+-- >
+
 <!--
 
  This file is part of Razza.

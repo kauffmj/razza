@@ -54,6 +54,7 @@
   <!-- CLEANING TASK - "ant clean" -->
   <target name="clean">
     <delete dir="build"/>
+    <delete file="SAT.jar"/>
   </target>
 
   <!-- COMPILING TASK - "ant compile" -->  

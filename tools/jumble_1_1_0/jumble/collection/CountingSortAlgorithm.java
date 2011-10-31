@@ -1,15 +1,32 @@
+/**
+* This file is part of Razza.
+*
+* Razza is free software: you can redistribute it and/or modify it under
+* the terms of the GNU Lesser Public License as published by the Free
+* Software Foundation, either version 2 of the License, or (at your option)
+* any later version.
+*
+* Razza is distributed in the hope that it will be useful, but WITHOUT
+* WARRANTY; without even the implied warranty of MERCHANTABILITY or
+* FITNESS FOR A PARTICULAR PURPOSE.  Se the GNU Lesser Public License for
+* more details.
+*
+* You should have received a copy of the GNU Lesser Public License along
+* with Razza.  If not, see <http://www.gnu.org/licenses/>.
+**/
+
 /* end is the last index + 1 */
-package algorithms;
+
 public class CountingSortAlgorithm{ //extends SortAlgorithm {
 
 public static int[] sort(int[] a) throws Exception {
-  return csort(a,128,0);
+  return csort(a,1000,0);
 //pause();
 	
 }
 
 public static int sortPerformance(int[] a) {
-  return csortPerformance(a,128,0);
+  return csortPerformance(a,1000,0);
 //pause();
 	
 }

@@ -26,6 +26,21 @@
  * @version 	1.1, 12 Apr 2000
  *              -- fixed java.lang.ArrayIndexOutOfBoundsException
  *                 Joel Berry <jmbshifty@yahoo.com> found this bug
+ *
+ * This file is part of Razza.
+ *
+ * Razza is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser Public License as published by the Free
+ * Software Foundation, either version 2 of the License, or (at your option)
+ * any later version.
+ *
+ * Razza is distributed in the hope that it will be useful, but WITHOUT
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE.  Se the GNU Lesser Public License for
+ * more details.
+ *
+ * You should have received a copy of the GNU Lesser Public License along
+ * with Razza.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 /* http://www.auto.tuwien.ac.at/~blieb/woop/shell.html
@@ -41,7 +56,7 @@
  * smaller values of h. Using such a procedure for any sequence of
  * values h which ends in 1 will produce a sorted array.
  */
-package algorithms;
+
 public class ShellSortAlgorithm {//extends SortAlgorithm {
     public static int[] sort(int a[]) //throws Exception 
     {

@@ -72,7 +72,7 @@ NOTE: Jumble works on .class files, so you must use javac to
 create example/Mover.class and example/MoverTest.class before you run
 Jumble:
 
-  javac -cp jumble.jar example/*.java
+  javac -cp jumble.jar example/*.java 
 
 
 Jumble starts by running the unit tests (in MoverTest.class) on the

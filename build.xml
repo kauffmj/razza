@@ -96,6 +96,7 @@
   <!-- Cobertura instrumenting - "ant cobertura-instrument" -->
   <target name="cobertura-instrument">
     <delete file="cobertura.ser"/>
+    <mkdir dir="build/instrumented"/>
     <cobertura-instrument todir="./build/instrumented">
       <ignore regex="org.apache.log4j.*" />
       <fileset dir="./build/classes">

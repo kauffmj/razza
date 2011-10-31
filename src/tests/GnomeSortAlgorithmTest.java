@@ -25,8 +25,7 @@
  * with Razza.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-// @author    Travis Charlton, Molly Mattis, Eric Hildebrand
-//  PLEDGE:
+//@author    Travis Charlton, Molly Mattis, Eric Hildebrand
 
 package tests;
 
@@ -1066,7 +1065,7 @@ public class GnomeSortAlgorithmTest extends TestCase
 		long actual = alg.sortPerformance(array);
 		if(expected < actual)
 		    passed = 0;
-		assertEquals(actual, expected);
+		assertEquals(passed, 1);
 	    }
 	catch (Exception e)
 	    {
@@ -1085,7 +1084,7 @@ public class GnomeSortAlgorithmTest extends TestCase
 		long actual = alg.sortPerformance(array);
 		if(expected < actual)
 		    passed = 0;
-		assertEquals(actual, expected);
+		assertEquals(passed, 1);
 	    }
 	catch (Exception e)
 	    {

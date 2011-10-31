@@ -16,96 +16,55 @@
 **/
 
 package algorithms;
-public class GnomeSortAlgorithm {//extends SortAlgorithm {
+public class GnomeSortAlgorithm{// extends SortAlgorithm {
 
-    public static int[] sort(int a[]){ //throws Exception {
+    public static int[] sort(int a[]){// throws Exception {
 		
-		int i=0, temp;
+	int i=0, temp;
 		
-		while(i < a.length) {
+	while(i < a.length) {
 			
-		    if(i == 0 || a[i-1] <= a[i])
-			{
-			    i++;
-			}
-			
-			else{
-			    
-				
-				temp = a[i];
-				
-				a[i] = a[i-1];
-				
-				a[--i] = temp;
-				
-			}
-			
-			//pause(i);
-			
+	    if(i == 0 || a[i-1] <= a[i])
+		{
+		    i++;
 		}
+			
+	    else
+		{		
+		    temp = a[i];		
+		    a[i] = a[i-1];	
+		    a[--i] = temp;			
+		}
+			
+	    //pause(i);
+			
+	}
 		
-		//pause(-1,-1);
-		return a;
+	//pause(-1,-1);
+	return a;
     }
 
     public static long sortPerformance(int[] a) /*throws Exception*/ {
-	long comparisons = 0;
+	long count = 0;
+        for (int i = 1; i < a.length; i++)
+        {
+            int j = i;
+            int B = a[i];
+            while ((j > 0) && (a[j-1] > B))
+            {
+                count++;
+                //if (stopRequested)
+                //{
+                //	return;
+                //}
+                a[j] = a[j-1];
+                j--;
+                //pause(i,j);
+            }
+            a[j] = B;
+            //pause(i,j);
+        }
 
-		int i=0, temp;
-		
-		while(i < a.length) {
-			
-		    if(i == 0 || a[i-1] <= a[i])
-			{
-			    i++;
-			    if(a[i-1] <= a[i])
-				comparisons++;
-			}
-			
-			else{
-			    
-			    comparisons++;
-				temp = a[i];
-				
-				a[i] = a[i-1];
-				
-				a[--i] = temp;
-				
-			}
-			
-			//pause(i);
-			
-		}
-		
-		//pause(-1,-1);
-		return comparisons;
+        return count;
     }
-    
-
 }
-
-
-
-/*
- 
- for (int i = a.length; --i>=0; ) {
- boolean flipped = false;
- for (int j = 0; j<i; j++) {
- if (stopRequested) {
- return;
- }
- if (a[j] > a[j+1]) {
- int T = a[j];
- a[j] = a[j+1];
- a[j+1] = T;
- flipped = true;
- }
- pause(i,j);
- 
- }
- if (!flipped) {
- return;
- }
- }
- 
- */

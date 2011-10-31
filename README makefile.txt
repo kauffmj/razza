@@ -1,0 +1,19 @@
+README razza makefile
+
+In the terminal window, navigate to the root directory of the project.
+
+Here is a list of commands that are included in the makefile, along with a description of what each of the commands does.  To run the command, just type it into the command line from the root directory.  For example, type "make clean" to remove all the bytecode and the jar file.
+--------------------------------------------------------------------------
+make compile - sets the classpath necessary to run the test suite.  It will include junit, hamcrest, src directory, build directory.  It runs javac on all the code in src/algorithms and src/tests.  
+
+make jar - Saves the .class files to a jar file in the root directory called SAT.jar.  It is in the root directory so the user can easily find the executable.
+
+make test - By default, runs all the tests.  In order to choose specific tests to run, follow the make test command with "TESTSUITESUBSET="testsuite1 testsuite2 É""
+For example, if you wished to test just quick sort and counting sort, you would type this into the command line:
+make test TESTSUITESUBSET="QuickSortTest CountingSortAlgorithmTest"
+
+make cloc - runs the CLOC (Count Lines Of Code) tool via a script and delivers the output to the screen 
+
+make cobertura - runs the commands necessary to get a Cobertura coverage report of the system.  Includes instrumentation, running the tests, and creating a coverage report.  To view the report, open the index.html file in a web browser. 
+
+make clean - removes the bytecode from build/class/algorithms and build/classes/tests/ and  also removes the jar file that contains all the .class (bytecode) files.

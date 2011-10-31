@@ -122,7 +122,6 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
-	    System.out.println("fail1");
 	}
     } 
 
@@ -244,7 +243,6 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
-	    System.out.println("fail1");
 	}
     }
 
@@ -267,7 +265,6 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
-	    System.out.println("fail1");
 	}
     }
 
@@ -289,7 +286,6 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
-	    System.out.println("fail1");
 	}
     }
 
@@ -311,7 +307,6 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
-	    System.out.println("fail1");
 	}
     }
 
@@ -333,7 +328,6 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
-	    System.out.println("fail1");
 	}
     }
 
@@ -356,7 +350,6 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
-	    System.out.println("fail1");
 	}
     }
 
@@ -378,7 +371,6 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
-	    System.out.println("fail1");
 	}
     }
 
@@ -400,7 +392,6 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
-	    System.out.println("fail1");
 	}
     }
 
@@ -423,7 +414,6 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
-	    System.out.println("fail1");
 	}
     }
 
@@ -445,7 +435,6 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
-	    System.out.println("fail Triple Digs");
 	}
     }
 
@@ -467,7 +456,6 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
-	    System.out.println("fail Mix Triple Digs");
 	}
     }
 
@@ -489,7 +477,6 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
-	    System.out.println("fail1");
 	}
     }
 
@@ -512,7 +499,6 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
-	    System.out.println("fail1");
 	}
     }
 
@@ -535,7 +521,6 @@ public class CountingSortAlgorithmTest extends TestCase
 	    }
 	    catch (Exception e) {
 		e.printStackTrace();
-		System.out.println("fail1");
 	    }
 	}
     }
@@ -559,7 +544,6 @@ public class CountingSortAlgorithmTest extends TestCase
 	    }
 	    catch (Exception e) {
 		e.printStackTrace();
-		System.out.println("fail1");
 	    }
 	}
     }
@@ -583,7 +567,6 @@ public class CountingSortAlgorithmTest extends TestCase
 	    }
 	    catch (Exception e) {
 		e.printStackTrace();
-		System.out.println("fail1");
 	    }
 	}
     }
@@ -607,7 +590,6 @@ public class CountingSortAlgorithmTest extends TestCase
 	    }
 	    catch (Exception e) {
 		e.printStackTrace();
-		System.out.println("fail1");
 	    }
 	}
     }
@@ -631,7 +613,6 @@ public class CountingSortAlgorithmTest extends TestCase
 	    }
 	    catch (Exception e) {
 		e.printStackTrace();
-		System.out.println("fail1");
 	    }
 	}
     }
@@ -656,7 +637,6 @@ public class CountingSortAlgorithmTest extends TestCase
 	    }
 	    catch (Exception e) {
 		e.printStackTrace();
-		System.out.println("fail1");
 	    }
 	}
     }
@@ -681,7 +661,6 @@ public class CountingSortAlgorithmTest extends TestCase
 	    }
 	    catch (Exception e) {
 		e.printStackTrace();
-		System.out.println("fail");
 	    }
 	}
     }

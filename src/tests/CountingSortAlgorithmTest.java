@@ -37,7 +37,8 @@ public class CountingSortAlgorithmTest extends TestCase
     Random rng = new Random();	
 
     int repeatCount = 25;
-    int maxArrayLength = 10000000;
+    int maxArrayLength = 1000;
+    int maxNum = 999;
 
     public CountingSortAlgorithmTest(String name) 
     {
@@ -121,6 +122,7 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
+	    System.out.println("fail1");
 	}
     } 
 
@@ -242,6 +244,7 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
+	    System.out.println("fail1");
 	}
     }
 
@@ -264,6 +267,7 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
+	    System.out.println("fail1");
 	}
     }
 
@@ -285,6 +289,7 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
+	    System.out.println("fail1");
 	}
     }
 
@@ -306,6 +311,7 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
+	    System.out.println("fail1");
 	}
     }
 
@@ -327,6 +333,7 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
+	    System.out.println("fail1");
 	}
     }
 
@@ -349,6 +356,7 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
+	    System.out.println("fail1");
 	}
     }
 
@@ -370,6 +378,7 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
+	    System.out.println("fail1");
 	}
     }
 
@@ -391,6 +400,7 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
+	    System.out.println("fail1");
 	}
     }
 
@@ -413,6 +423,7 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
+	    System.out.println("fail1");
 	}
     }
 
@@ -434,6 +445,7 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
+	    System.out.println("fail Triple Digs");
 	}
     }
 
@@ -455,6 +467,7 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
+	    System.out.println("fail Mix Triple Digs");
 	}
     }
 
@@ -476,6 +489,7 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
+	    System.out.println("fail1");
 	}
     }
 
@@ -485,11 +499,11 @@ public class CountingSortAlgorithmTest extends TestCase
      * 
      * @Test
      */
-    public void testSomeNegs() 
+    public void testSome() 
     {
-	int[] array = new int[]{2, 5, -6, 9, 7, -4, 1, 3};
+	int[] array = new int[]{2, 5, 6, 9, 7, 4, 1, 3};
 
-	int[] expected = new int[]{-4,-6, 1, 2, 3, 5, 7, 9};
+	int[] expected = new int[]{1, 2, 3, 4, 5, 6, 7, 9};
 
 	try {
 	    int[] actual = alg.sort(array);
@@ -498,27 +512,7 @@ public class CountingSortAlgorithmTest extends TestCase
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
-	}
-    }
-
-    /**
-     * Tests an array where all the numbers are negative
-     * 
-     * @Test
-     */
-    public void testAllNegs() 
-    {
-	int[] array = new int[]{-2, -5, -6, -9, -7, 4, -1, -3};
-
-	int[] expected = new int[]{-9, -7, -6, -5, -4, -3, -2, -1};
-
-	try {
-	    int[] actual = alg.sort(array);
-	    assertEquals(expected.length, actual.length);
-	    checkMatching(expected, actual);
-	}
-	catch (Exception e) {
-	    e.printStackTrace();
+	    System.out.println("fail1");
 	}
     }
 
@@ -541,6 +535,7 @@ public class CountingSortAlgorithmTest extends TestCase
 	    }
 	    catch (Exception e) {
 		e.printStackTrace();
+		System.out.println("fail1");
 	    }
 	}
     }
@@ -564,6 +559,7 @@ public class CountingSortAlgorithmTest extends TestCase
 	    }
 	    catch (Exception e) {
 		e.printStackTrace();
+		System.out.println("fail1");
 	    }
 	}
     }
@@ -587,6 +583,7 @@ public class CountingSortAlgorithmTest extends TestCase
 	    }
 	    catch (Exception e) {
 		e.printStackTrace();
+		System.out.println("fail1");
 	    }
 	}
     }
@@ -610,6 +607,7 @@ public class CountingSortAlgorithmTest extends TestCase
 	    }
 	    catch (Exception e) {
 		e.printStackTrace();
+		System.out.println("fail1");
 	    }
 	}
     }
@@ -633,56 +631,11 @@ public class CountingSortAlgorithmTest extends TestCase
 	    }
 	    catch (Exception e) {
 		e.printStackTrace();
+		System.out.println("fail1");
 	    }
 	}
     }
-
-
-    /**
-     * Tests sorting of an array of 10 random negative values 
-     * 
-     * @Test
-     */
-    public void testRandomNegativeValues()
-    {
-	int numberOfRuns = repeatCount;
-	for (int runs = 0; runs<numberOfRuns; runs++) {
-	    // generate a list of ten random numbers between -100 and 0
-	    int[] input = new int[10];
-	    for (int i=0; i<input.length; i++)
-		input[i] = 0-rng.nextInt(100);
-	    try {
-		int[] output = alg.sort(input);
-		checkSorted(output);
-	    }
-	    catch (Exception e) {
-		e.printStackTrace();
-	    }
-	}
-    }
-
-    /**
-     * Tests sorting of an array of 10 random negative and positive values 
-     * 
-     * @Test
-     */
-    public void testRandoMixedValues()
-    {
-	int numberOfRuns = repeatCount;
-	for (int runs = 0; runs<numberOfRuns; runs++) {
-	    // generate a list of ten random numbers between -100 and 100
-	    int[] input = new int[10];
-	    for (int i=0; i<input.length; i++)
-		input[i] = 100-rng.nextInt(200);
-	    try {
-		int[] output = alg.sort(input);
-		checkSorted(output);
-	    }
-	    catch (Exception e) {
-		e.printStackTrace();
-	    }
-	}
-    }
+  
 
     /**
      * Tests sorting of an array with random length and random values
@@ -692,17 +645,18 @@ public class CountingSortAlgorithmTest extends TestCase
     public void testRandomLengths()
     {
 	int numberOfRuns = repeatCount;
-	for (int runs = 0; runs<numberOfRuns; runs++) {
-	    // we generate some list of up to maxArrayLength randoms
+        for (int runs = 0; runs<numberOfRuns; runs++) {
+      	// we generate some list of up to maxArrayLength randoms
 	    int[] input = new int[rng.nextInt(maxArrayLength)];
 	    for (int i=0; i<input.length; i++)
-		input[i] = rng.nextInt();
+		input[i] = rng.nextInt(maxNum);
 	    try {
 		int[] output = alg.sort(input);
 		checkSorted(output);
 	    }
 	    catch (Exception e) {
 		e.printStackTrace();
+		System.out.println("fail1");
 	    }
 	}
     }
@@ -718,7 +672,7 @@ public class CountingSortAlgorithmTest extends TestCase
 	for (int runs = 0; runs<numberOfRuns; runs++) {
 	    // we generate some list of up to maxArrayLength randoms
 	    int[] input = new int[rng.nextInt(maxArrayLength)];
-	    int value = rng.nextInt();
+	    int value = rng.nextInt(maxNum);
 	    for (int i=0; i<input.length; i++)
 		input[i] = value;
 	    try {
@@ -727,6 +681,7 @@ public class CountingSortAlgorithmTest extends TestCase
 	    }
 	    catch (Exception e) {
 		e.printStackTrace();
+		System.out.println("fail");
 	    }
 	}
     }

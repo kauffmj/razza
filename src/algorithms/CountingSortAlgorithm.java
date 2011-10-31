@@ -20,13 +20,13 @@ package algorithms;
 public class CountingSortAlgorithm{ //extends SortAlgorithm {
 
 public static int[] sort(int[] a) throws Exception {
-  return csort(a,128,0);
+  return csort(a,1000,0);
 //pause();
 	
 }
 
 public static int sortPerformance(int[] a) {
-  return csortPerformance(a,128,0);
+  return csortPerformance(a,1000,0);
 //pause();
 	
 }

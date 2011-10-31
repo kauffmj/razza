@@ -73,7 +73,7 @@ compile:
 jumble:
 	
 	
-	@javac -classpath ./junit-4.10.jar:./collection/hamcrest-all-1.3.0RC2.jar:./jumble.jar:./collection:./collection/tests:.  ./collection/*.java
+	@javac -classpath ./junit-4.10.jar:./hamcrest-all-1.3.0RC2.jar:./jumble.jar:./collection:./collection/tests:.  ./collection/*.java
 	
 	
 	

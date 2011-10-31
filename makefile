@@ -81,6 +81,7 @@ cloc:
 
 # Run Cobertura in order to collect coverage information.
 cobertura:
+	@mkdir build/instrumented
 	@bash ./tools/cobertura-1.9.4.1/cobertura-instrument.sh --destination ./build/instrumented ./build/classes
 	@java -cp ./tools/cobertura-1.9.4.1/cobertura.jar:./build/instrumented:./build/classes:./lib/junit-4.9.jar:./lib/hamcrest-all-1.3.0RC2.jar:. -Dnet.sourceforge.cobertura.datafile=./cobertura.ser tests.AllTests
 	@bash ./tools/cobertura-1.9.4.1/cobertura-report.sh --format html --datafile ./cobertura.ser --destination ./reports/cobertura ./src

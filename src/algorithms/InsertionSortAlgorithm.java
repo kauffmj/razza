@@ -32,13 +32,10 @@
   * Modified by:
   *
   * Jonathan Miller Kauffman
-  * PLEDGE:
   *
   * Tyler J. Abbott
-  * PLEDGE:  
   *
   * Cory Matthew Jones
-  * PLEDGE:
   *
   *
   * This file is part of Razza.

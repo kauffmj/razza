@@ -16,7 +16,7 @@ will only execute the test suites for bubble sort and shell sort.
 
 ant cloc - Runs the Count Lines of Code (CLOC) tool on both the "algorithms" and "tests" directories.  This tool reports the number of blank, commented, and source code lines in each directory.
 
----------------------Cobertura Tasks - targets to run the Cobertura tool-----------------------
+---------------------Cobertura Tasks - Targets to Run the Cobertura Tool-----------------------
 ant cobertura-clean - removes the files and directories created by running the Cobertura tool.
 
 ant cobertura-instrument - First in a list of tasks necessary to generate a Cobertura test coverage report.  This task separates the instrumented classes and puts them in the /build/instrumented directory.

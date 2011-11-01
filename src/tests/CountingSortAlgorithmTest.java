@@ -6,15 +6,6 @@ import static org.junit.Assert.*;
 import static org.hamcrest.Matchers.*;
 import algorithms.*;
 /**
- * CS290 Lab 3
- * CountingSortTest.java
- * Purpose: JUnit test suite for the Generator.java program
- *
- * @author Molly L Mattis
- * @author Eric Hildebrand
- * @author Travis Charlton
- * @version 1.0 9/26/11
- *
  * This file is part of Razza.
  *
  * Razza is free software: you can redistribute it and/or modify it under

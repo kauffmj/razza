@@ -1,8 +1,3 @@
-// Travis Charlton, Molly Mattis, Eric Hildebrand
-// Professor Kapfhammer
-// CS290
-// 24 September 2011
-
 /* This is the test suite for the GnomeSortAlgorithm program.  It test to ensure that the
  * GnomeSort Algorithm is working correctly for many different inputs.  These include arrays of
  * small (0) and large (100000) length, sorted and unsorted arrays, arrays containing positive and

@@ -1,8 +1,5 @@
 /**
- * Test suite for the ShellSort algorithm
- * Pledge:
- *
- *
+ * Test suite for the ShellSort algorithm.
  *
  * This file is part of Razza.
  *

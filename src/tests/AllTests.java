@@ -1,14 +1,4 @@
 /**
-  * CS 290 - Principles of Software Development
-  * Laboratory Five
-  *
-  * AllTests.java
-  *
-  * Runs a user-specified subset of the test suite.
-  *
-  * @author Jonathan Miller Kauffman
-  * @author Gregory M. Kapfhammer
-  *
   * This file is part of Razza.
   *
   * Razza is free software: you can redistribute it and/or modify it under

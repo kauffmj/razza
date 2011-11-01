@@ -12,15 +12,6 @@ import algorithms.*;
   *
   * Tests the EQ sort algorithm.
   *
-  * @author Jonathan Miller Kauffman
-  * PLEDGE:
-  *
-  * @author Tyler J. Abbott
-  * PLEDGE:
-  *
-  * @author Cory Matthew Jones
-  * PLEDGE:
-  *
   * This file is part of Razza.
   *
   * Razza is free software: you can redistribute it and/or modify it under

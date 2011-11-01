@@ -5,15 +5,6 @@
   * tested, as this implementation of radix sort
   * can only handle non-negative integers.
   *
-  * Jonathan Miller Kauffman
-  * PLEDGE:
-  *
-  * Tyler J. Abbott
-  * PLEDGE:
-  *
-  * Cory Matthew Jones
-  * PLEDGE:
-  *
   * This file is part of Razza.
   *
   * Razza is free software: you can redistribute it and/or modify it under

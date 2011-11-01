@@ -1,5 +1,4 @@
-# CS 290 Lab Six
-
+# Razza Makefile Build System
 #
 # This file is part of Razza.
 #
@@ -18,8 +17,10 @@
 
 JFLAGS = -g
 JC = javac
+
 # Specifies the individual test suites to run - execute all of them by default.
 TESTSUITESUBSET=""
+
 .SUFFIXES: .java .class
 .java.class:
 	$(JC) $(JFLAGS) $*.java

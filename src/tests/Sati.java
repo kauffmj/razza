@@ -4,9 +4,6 @@
 *  Contains an infrastructure to support the testing of Sorting Algorithms 
 *  in Java. 
 *
-*  CS 290
-*  Laboratory 4
-*
 *  ***Instructions***
 *
 *  The two main functions of Sati are in the methods generate() and shuffle().
@@ -20,11 +17,6 @@
 *  Shuffles an array a specified amount of times.
 *  Call this with Sati.shuffle(int[] a, int amount) where a is the array to be
 *  shuffled and amount is the amount of shuffles to perform.
-*
-*  ******************
-* 
-*  @author Zach Mendel
-*  PLEDGE:
 *
 * This file is part of Razza.
 *

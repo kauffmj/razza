@@ -1,8 +1,10 @@
 README razza ant
 
-In the terminal window, navigate to the root directory of the project.
+The Apache Ant build system will work on any platform, as long as you have it downloaded. If you have not already downloaded Apache Ant, go to http://ant.apache.org/bindownload.cgi and download the latest version.
 
-Here is a list of targets that are included in the ant build system, along with a description of what each of the targets does.  To run the target, just type it into the command line from the root directory.  For example, type "ant clean" to remove the build directory.
+After you have downloaded Apache Ant, you are ready to use razza. In the terminal window, navigate to the root directory of the project.
+
+Here is a list of targets that are included in the ant build system, along with a description of what each of the targets does. To run the target, just type it into the command line from the root directory. For example, type "ant clean" to remove the build directory. 
 ----------------------------------------------------------------------------------------------------------------
 ant clean - Removes the build directory which contains all of the bytecode for the algorithms and the test suites.
 
@@ -13,6 +15,18 @@ ant jar - Creates a jar file called SAT.jar in the root directory.  This archive
 ant test - By default, this target runs all of the JUnit test suites.  In order to run a subset of the test suites, you must add the parameter "-DtestSuiteSubset=testSuites", where "testSuites" is a space delimited list of the test suites that you wish to run.  Any number of test suites may be entered in the parameter.  For example:
 ant test -DtestSuiteSubset="BubbleSortTest ShellSortTest"
 will only execute the test suites for bubble sort and shell sort.
+
+The test suites that can be included in this subset can be any of the following:
+
+    * BubbleSortTest
+    * CountingSortAlgorithmTest
+    * EQSortAlgorithmTest
+    * GnomeSortAlgorithmTest
+    * InsertionSortAlgorithmTest
+    * RadixSortAlgorithmTest
+    * MergeSortTest
+    * QuickSortTest
+    * ShellSortTest 
 
 ant cloc - Runs the Count Lines of Code (CLOC) tool on both the "algorithms" and "tests" directories.  This tool reports the number of blank, commented, and source code lines in each directory.
 
